@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff4d4d;
+}
+
+.book-table {
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.book-table:hover {
+    background: #A4A4A4;
+}
+
+.content {
+    flex: 1;
+    margin-top: 80px;
+}
+
+.book-table:hover {
+    background-color: #ff3333;
+}
+
+.logo img{
+    width:80px;
+    height: 40px;
+}
+
+.hero {
+    height: 300px;
+    width: auto;
+    background-image: url("content://media/external/downloads/1000003519");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero h1 {
+    color: white;
+    font-family: 'Norwester', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+    letter-spacing: 3px;
+}
+
+
+.hero h2 {
+    font-size: 2.5rem;
+    font-family: 'Norwester', sans-serif;
+    opacity: 0.7;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+}
+
+.best-seller {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    margin-right: -2rem;
+    margin-bottom: -2rem;
+    margin-top: -2rem;
+}
+
+.product-image {
+    padding: 20px;
+}
+
+.product-info {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.product-info h3 {
+    color: #ff4d4d;
+    margin-bottom: 0.5rem;
+}
+
+.product-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.price-tag {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.price-tag span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff4d4d;
+}
+
+.meal-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.meal-btn:hover {
+    background-color: #555;
+}
+
+.popular-food {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.popular {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.popular-food h2 {
+    color: #333;
+    font-size: 2rem;
+}
+
+.popular-food h3 {
+    color: #ff4d4d;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.food-item {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    box-shadow: 10px 10px 15px #7f8080;
+}
+
+.food-item img {
+    width:245px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: 0.25s ease;
+}
+
+.food-item img:hover {
+    transform: scale(1.1);
+}
+
+.pizza img{
+    width:213px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px; 
+}
+
+.food img{
+    width:170px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.food-item h4 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+
+.check-btn {
+    background: #ff3333;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: 0.25s;
+}
+
+.check-btn:hover {
+    background: #A4A4A4;
+}
+
+
+footer {
+    background-color: rgba(128, 128, 128, 0.5);
+    backdrop-filter:blur(5px);
+    padding: 2rem;
+    margin-top: auto;
+    text-align: center;
+}
+
+.footer-logo {
+    margin-bottom: 1.5rem;
+    
+}
+
+.footer-logo img {
+    height: 80px;
+    width: 80px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    font-family: 'Cinzel';
+    font-weight: bold;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.pizzaglory {
+    opacity: 0.3;
+}
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff4d4d;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .product-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-info {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .price-tag {
+        justify-content: center;
+    }
+
+    .food-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .product-card {
+        flex-direction: row;
+    }
+
+    .product-info {
+        text-align: left;
+        padding: 3rem;
+    }
+
+    .product-image {
+        width: 60%;
+        height: auto;
+    }
+
+    .price-tag {
+        margin-bottom: 0;
+    }
+    .meal-btn {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.125rem;
+        background: #333;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .meal-btn:hover {
+        background: #444;
+    }
+}
+
+@media (max-width: 767px) {
+.body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+}
+    
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: column;
+        width: 250px;
+        height: auto;
+        padding: 2rem;
+        box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        margin-top: 70px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 0.5rem 0;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .hero{
+        width:122%;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .product-card {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        background: white;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .product-info {
+        padding: 1.25rem;
+        text-align: center;
+    }
+
+    .product-image {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .product-image img {
+        height: 230px;
+        width: auto;
+        margin: 0;
+    }
+    .popular-food{
+        width:121%;
+    }
+    .food-grid {
+        width:100%;
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .food-item{
+        width:102%;
+    }
+
+    .book-table {
+        width: 100%;
+        margin-top: 1rem;
+        padding: 0.75rem;
+    }
+
+    .price-tag {
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .meal-btn {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.125rem;
+    }
+    .footer-background {
+        width: 121%;
+    }
+}
+
+/* end */
+  
